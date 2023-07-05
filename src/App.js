@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <main className="App">
+            <nav>menu</nav>
+            <header>
+                <img
+                    src="https://bookya.com.au/wp-content/uploads/2022/05/hitesh-dewasi-5JwBbnyZzfc-unsplash-1.jpg"
+                    alt=""
+                />
+            </header>
+            <section>
+                <h1>Reserve a table</h1>
+                <div className="control">
+                    <p>Party size</p>
+                    <button>-</button>
+                    <p>3</p>
+                    <button>+</button>
+                </div>
+            </section>
+        </main>
+    )
 }
 
-export default App;
+export default App
