@@ -17,3 +17,29 @@ img {
     display: flex;
     justify-content: space-between;
 }
+
+.control button {
+    border: none;
+    background-color: transparent;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.control input {
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.control input:focus {
+    outline: none;
+}
+
+p {
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}

@@ -1,6 +1,9 @@
+import { useState } from 'react'
 import './App.css'
 
 function App() {
+    const [party, setParty] = useState(3)
+
     return (
         <main className="App">
             <nav>menu</nav>
@@ -15,9 +18,24 @@ function App() {
                 <div className="control">
                     <p>Party size</p>
                     <div className="control">
-                        <button>-</button>
-                        <p>3</p>
-                        <button>+</button>
+                        <button
+                            onClick={() => {
+                                setParty((prev) => (prev > 1 ? prev - 1 : prev))
+                            }}
+                        >
+                            -
+                        </button>
+                        <p>
+                            {' '}
+                            <input style={{ width: '30px' }} type="text" value={party} />{' '}
+                        </p>
+                        <button
+                            onClick={() => {
+                                setParty((prev) => (prev < 30 ? prev + 1 : prev))
+                            }}
+                        >
+                            +
+                        </button>
                     </div>
                 </div>
                 <div className="control">
@@ -29,6 +47,9 @@ function App() {
                     <p>Hour</p>
 
                     <p>3</p>
+                </div>
+                <div className="control">
+                    <button style={{ margin: 'auto' }}>Confirm</button>
                 </div>
             </section>
         </main>
