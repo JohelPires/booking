@@ -15,4 +15,5 @@ img {
 
 .control {
     display: flex;
+    justify-content: space-between;
 }

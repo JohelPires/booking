@@ -14,9 +14,21 @@ function App() {
                 <h1>Reserve a table</h1>
                 <div className="control">
                     <p>Party size</p>
-                    <button>-</button>
+                    <div className="control">
+                        <button>-</button>
+                        <p>3</p>
+                        <button>+</button>
+                    </div>
+                </div>
+                <div className="control">
+                    <p>Date</p>
+
+                    <input type="date" />
+                </div>
+                <div className="control">
+                    <p>Hour</p>
+
                     <p>3</p>
-                    <button>+</button>
                 </div>
             </section>
         </main>
