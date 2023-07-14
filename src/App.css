@@ -7,13 +7,18 @@ img {
     width: 400px;
 }
 
+h1 {
+    padding: 0 15px;
+}
+
 .App {
     width: 400px;
     margin: auto;
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
 }
 
 .control {
+    padding: 0 15px;
     display: flex;
     justify-content: space-between;
 }
@@ -30,7 +35,7 @@ img {
     background-color: transparent;
     text-align: center;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 .control input:focus {
     outline: none;
@@ -41,5 +46,21 @@ p {
     background-color: transparent;
     text-align: center;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1rem;
+}
+
+.control-button {
+    width: 400px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.confirm {
+    background-color: rgb(238, 215, 5);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 10px 40px;
+    border-radius: 20px;
 }
